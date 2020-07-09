@@ -1,4 +1,4 @@
-# VLPR
+# Vehicle License Plate Recognition: Team THE CORE
 
 ## Prerequisite packages
 ### Opencv:-
@@ -25,22 +25,25 @@ sudo apt install python-numpy
 ## Code & Files
 
 ### Our project performs the following steps:
-* Liscense plate extraction - Done by [video_frame_extraction.py](video_frame_extraction.py).
-* Liscense plate Recognition - Done by [detection.py](detection.py).
+* Frame extraction from video - Done by [videoframe.py](VLPR/videoframe.py).
+* License plate extraction - Done by [plateDetect.py](VLPR/plateDetect.py).
+* License plate Recognition - Done by [detectchar.py](VLPR/detectchar.py).
 * Creates a folder wherein the extracted license plate number is stored.
 
 ### How to run our project:
-* The test video should be added in the VLPD folder.
-* Change the name of the video in [video_frame_extraction.py](video_frame_extraction.py) on line 23.
+* Download the "weights" file folder from https://drive.google.com/open?id=1298i7Ocyq943klu08WKEIlLAimIfzTm3
+* Add the weights folder to VLPR 
+* The test video should be added in the "Input" folder.
 * Open the terminal.
 ```sh
 cd VLPD
 ```
 ```python
-python video_frame_extraction.py
+python videoframe.py
 ```
-* Check output in the vehicle folder
+* Provide the proper filename with extension when it prompts
+* Check output in the results folder
 ---
 ## In order to enhance the computational perfromance a GPU setup is preferrable as it is 500 times faster than CPU
 
-
+### FOR ANY QUERIES CONTACT - khanjackson53@gmail.com
